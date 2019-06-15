@@ -24,7 +24,7 @@ const S = {
     height: 100vh;
     border: 5px solid #ee5555;
   `,
-  Cursor: styled.div.attrs(({ position }) => ({
+  Tracker: styled.div.attrs(({ position }) => ({
     style: {
       top: `${position.y}px`,
       left: `${position.x}px`,
@@ -45,7 +45,7 @@ const App = () => {
   return (
     <S.Wrapper>
       <div>
-        <S.Cursor position={position} />
+        <S.Tracker position={position} />
         <div>x: {position.x}</div>
         <div>y: {position.y}</div>
       </div>
